@@ -1,0 +1,19 @@
+.home{
+	margin-top: 20px;
+}
+
+.home h1{
+	text-align: center;
+	color: #5ddc58;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.home-text{
+	padding: 10px 30px;
+}
+
+.home-text p{
+	color: #ffffff;
+	text-align: center;
+}

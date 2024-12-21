@@ -1,0 +1,87 @@
+.cta {
+    text-align: center;
+    padding: 20px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.cta-text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    background-color: #00764d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.cta-text .btn:hover{
+    background-color: #d1c6ae;
+    color: black;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #5ddc58;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+	background-color: #d1c6ae;
+	color: black;
+	font-weight: bold;
+}
+
+
+.social-icon i {
+    color: #102533;
+    font-size: 20px;
+}
+
+.social {
+    position: absolute;
+    right: 20px;
+}
+	
+
+.social a {
+    padding: 10px 20px;
+    background-color: #00764d;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social a:hover{
+	background-color: #d1c6ae;
+	color: black;
+	font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+	.cta h2 {
+		font-size: 1.5em;
+	}
+}
+  

@@ -1,0 +1,43 @@
+section {
+	width: 100%;
+}
+
+section h1 {
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	color: #fff;
+}
+
+.project-container {
+	width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+}
+
+.project-container a {
+	width: 45%;
+        height: 200px;
+        margin: 20px 0;
+}
+
+.project {
+	width: 100%;
+	height: 100%;
+}
+
+.project img {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+
+
+@media screen and (max-width: 500px) {
+	.project-container a {
+		width: 90%;
+
+	}
+}
+
