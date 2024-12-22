@@ -1,10 +1,10 @@
 import React from 'react';
-import './Header.module.css'
+import styles from './Header.module.css';
 
 const Header = () => {
 	return (
-		<header className='logo-header'>
-			<div className='logo'>
+		<header className={styles['logo-header']}>
+			<div className={styles.logo}>
 				<img
 					src="/images/bytevision.png"
 					alt="bytevision logo"
