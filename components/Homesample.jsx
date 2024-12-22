@@ -29,7 +29,7 @@ const HomeSample = () => {
 				</div>
 
 				<div className='web'>
-					<img src='/images/web.jpeg' alt="web maintenance' />
+					<img src='/images/web.jpeg' alt="web maintenance" />
 
 				</div>
 

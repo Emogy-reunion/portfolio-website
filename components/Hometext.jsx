@@ -1,5 +1,5 @@
 import React from 'react';
-import '/src/assets/css/Hometext.module.css';
+import './Hometext.module.css';
 
 const HomeText = () => {
 	return (

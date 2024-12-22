@@ -8,9 +8,8 @@ const CallAction = () => {
 			<h2>Got a Project? Take a look at our services</h2>
 
 			<div className='cta-text'>
-				<Link href='/services'>
-					<a className="btn">Explore Services</a>
-				</Link>
+				<Link href='/services' className="btn">Explore Services</Link>
+
 
 			</div>
 

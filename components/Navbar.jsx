@@ -1,42 +1,71 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import Link from 'next/link'; // No need for <a> tag anymore
+import { useRouter } from 'next/router';
 import './Navbar.module.css';
 
-
 const NavBar = () => {
+    const [isHidden, setSidebar] = useState(true);
+    const router = useRouter();
 
-        const [isHidden, setSidebar] = useState(true);
+    const ShowSidebar = () => {
+        setSidebar(false);
+    };
 
-        const ShowSidebar = () => {
-                setSidebar(false);
-        };
+    const HideSidebar = () => {
+        setSidebar(true);
+    };
 
-        const HideSidebar = () => {
-                setSidebar(true);
-        }
+    // Helper function to determine if the link is active
+    const isActive = (path) => {
+        return router.pathname === path ? 'active-link' : '';
+    };
 
+    return (
+        <nav className='navbar'>
+            <ul>
+                <li className='hide-on-mobile'>
+                    <Link href='/' className={`nav-link ${isActive('/')}`}>Home</Link>
+                </li>
+                <li className='hide-on-mobile'>
+                    <Link href='/about' className={`nav-link ${isActive('/about')}`}>About Us</Link>
+                </li>
+                <li className='hide-on-mobile'>
+                    <Link href='/services' className={`nav-link ${isActive('/services')}`}>Services</Link>
+                </li>
+                <li className='hide-on-mobile'>
+                    <Link href='/projects' className={`nav-link ${isActive('/projects')}`}>Projects</Link>
+                </li>
+                <li className='hide-on-mobile'>
+                    <Link href='/gallery' className={`nav-link ${isActive('/gallery')}`}>Gallery</Link>
+                </li>
+                <li className="menu-button">
+                    <a className='nav-link' onClick={ShowSidebar}>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
 
-        return (
-                <nav className='navbar'>
-                        <ul>
-                                <li className='hide-on-mobile'><NavLink to='/' className={({ isActive }) => isActive ? 'nav-link active-link': 'nav-link'}>Home</NavLink></li>
-                                <li className='hide-on-mobile'><NavLink to='/about' className={({ isActive }) => isActive ? 'nav-link active-link': 'nav-link'}>About Us</NavLink></li>
-                                <li className='hide-on-mobile'><NavLink to='/services' className={({ isActive }) => isActive ? 'nav-link active-link': 'nav-link'}>Services</NavLink></li>
-                                <li className='hide-on-mobile'><NavLink to='/projects' className={({ isActive }) => isActive ? 'nav-link active-link': 'nav-link'}>Projects</NavLink></li>
-                                <li className='hide-on-mobile'><NavLink to='/gallery' className={({ isActive }) => isActive ? 'nav-link active-link': 'nav-link'}>Gallery</NavLink></li>
-                                <li className="menu-button"><NavLink to="#" className='nav-link' onClick={ShowSidebar}><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></NavLink></li>
-                        </ul>
-
-                        <ul className={ isHidden ? 'hide-sidebar' : 'sidebar'}>
-                                <li><NavLink to="#" className='nav-link' onClick={HideSidebar}><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></NavLink></li>
-                                <li><NavLink to='/' className={({ isActive }) => isActive ? 'nav-link active-link': 'nav-link'}>Home</NavLink></li>
-                                <li><NavLink to='/about' className={({ isActive }) => isActive ? 'nav-link active-link': 'nav-link'}>About Us</NavLink></li>
-                                <li><NavLink to='/services' className={({ isActive }) => isActive ? 'nav-link active-link': 'nav-link'}>Services</NavLink></li>
-                                <li><NavLink to='/projects' className={({ isActive }) => isActive ? 'nav-link active-link': 'nav-link'}>Projects</NavLink></li>
-                                <li><NavLink to='/gallery' className={({ isActive }) => isActive ? 'nav-link active-link': 'nav-link'}>Gallery</NavLink></li>
-                        </ul>
-                </nav>
-        );
+            <ul className={isHidden ? 'hide-sidebar' : 'sidebar'}>
+                <li>
+                    <Link href='/' className={`nav-link ${isActive('/')}`}>Home</Link>
+                </li>
+                <li>
+                    <Link href='/about' className={`nav-link ${isActive('/about')}`}>About Us</Link>
+                </li>
+                <li>
+                    <Link href='/services' className={`nav-link ${isActive('/services')}`}>Services</Link>
+                </li>
+                <li>
+                    <Link href='/projects' className={`nav-link ${isActive('/projects')}`}>Projects</Link>
+                </li>
+                <li>
+                    <Link href='/gallery' className={`nav-link ${isActive('/gallery')}`}>Gallery</Link>
+                </li>
+            </ul>
+        </nav>
+    );
 };
 
 export default NavBar;
