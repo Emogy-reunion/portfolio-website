@@ -1,7 +1,5 @@
 import React from 'react';
 import '/Projects.module.css';
-import emImage from '/images/em.png';
-import soonImage from '/images/soon.jpeg';
 
 const ProjectDetails = () => {
 
@@ -11,25 +9,25 @@ const ProjectDetails = () => {
 			<div className='project-container'>
 				<a href='#'>
 					<div className='project'>
-						<img src={emImage} alt='project' />
+						<img src='/images/em.png' alt='website development' />
 					</div>
 				</a>
 
 				<a href='#'>
 					<div className='project'>
-                        		        <img src={soonImage} alt='project' />
+                        		        <img src='/images/soon.jpeg' alt='coming soon' />
                        			</div>   
 				</a>
 
 				<a href='#'>
 					<div className='project'>
-                	                	<img src={soonImage} alt='project' />
+                	                	<img src='/images/soon.jpeg' alt='coming soon' />
                         		</div>
 				</a>
 
 				<a href='#'>
 					<div className='project'>
-                                		<img src={soonImage} alt='project' />
+                                		<img src='/images/soon.jpeg' alt='coming soon' />
                        			</div>
 				</a>
 			</div>
