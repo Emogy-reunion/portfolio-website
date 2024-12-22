@@ -1,12 +1,5 @@
 import React from 'react';
 import './Homesample.module.css';
-import sample1 from '/images/sample1.jpeg';
-import sample2 from '/images/sample2.jpeg';
-import sample3 from '/images/sample3.jpeg';
-import sample4 from '/images/sample4.jpeg';
-import em from '/images/em.png';
-import web from '/images/web.jpeg';
-import sample7 from '/images/sample7.jpeg';
 
 const HomeSample = () => {
 	return (
@@ -14,34 +7,34 @@ const HomeSample = () => {
 
 			<div className='sample-container'>
 				<div className='samples'>
-					<img src={sample1} alt='sample' />
+					<img src='/images/sample1.jpeg' alt='graphic design' />
 				</div>
 
 				<div className='samples'>
-                                        <img src={sample2} alt='sample' />
+                                        <img src='/images/sample2.jpeg' alt='graphic design' />
                                 </div>
 
 				<div className='samples'>
-                                        <img src={sample3} alt='sample' />
+                                        <img src='/images/sample3.jpeg' alt='graphic design' />
                                 </div>
 
 				<div className='samples'>
-                                        <img src={sample4} alt='sample' />
+                                        <img src='/images/sample4.jpeg' alt='graphic design' />
                                 </div>
 			</div>
 
 			<div className='sample-container'>
 				<div className='web'>
-					<img src={em} alt='sample' />
+					<img src='/images/em.png' alt='web development' />
 				</div>
 
 				<div className='web'>
-					<img src={web} alt='sample' />
+					<img src='/images/web.jpeg' alt="web maintenance' />
 
 				</div>
 
 				<div className='samples hide-sample'>
-                                        <img src={sample7} alt='sample' />
+                                        <img src='/images/sample7.jpeg' alt='graphic design' />
 
                                 </div>
 			</div>
