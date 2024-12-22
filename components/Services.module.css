@@ -1,20 +1,20 @@
-section {
+.services-section {
 	width: 100%;
 }
 
-section h1 {
+.services-section h1 {
 	text-align: center;
 	font-weight: bold;
 	font-size: 2em;
 	color: #fff;
 }
 
-section h2 {
+.services-section h2 {
 	color: #5ddc58;
 	text-align: center;
 }
 
-section p {
+.services-section p {
 	color: #fff;
 	text-align: center;
 }

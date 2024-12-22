@@ -1,9 +1,9 @@
-section {
+.about-section {
 	width: 100%;
 	margin-bottom: 20px;
 }
 
-section h1 {
+.about-section h1 {
 	text-align: center;
 	color: #fff;
 	margin-bottom: 20px;
@@ -11,7 +11,7 @@ section h1 {
 	font-weight: bold;
 }
 
- .about-image {
+.about-image {
 	width: 80%;
 	height: 160px;
 	margin: 10px auto;

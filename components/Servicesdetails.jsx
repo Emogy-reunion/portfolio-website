@@ -1,4 +1,4 @@
-import React from "react";
+iimport React from "react";
 import "./Services.module.css";
 import emImage from '/images/em.png';
 import devImage from '/images/dev.jpeg';
@@ -18,7 +18,7 @@ import branding3Image from '/images/branding3.jpeg';
 
 const ServiceDetails = () => {
 	return (
-		<section>
+		<section className='services-section'>
 			<h1>Here's what we do</h1>
 
 			<div className='services-container'>

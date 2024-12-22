@@ -11,7 +11,7 @@ import branding2Image from '/images/branding2.jpeg';
 const GalleryDetails = () => {
 
 	return (
-		<section>
+		<section className='gallery-section'>
 			<h1>Our work</h1>
 			<div className='gallery-container'>
 				<div className='work'>

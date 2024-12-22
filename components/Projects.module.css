@@ -1,8 +1,8 @@
-section {
+.project-section {
 	width: 100%;
 }
 
-section h1 {
+.project-section h1 {
 	text-align: center;
 	font-size: 2em;
 	font-weight: bold;

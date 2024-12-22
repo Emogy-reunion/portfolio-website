@@ -1,4 +1,4 @@
-nav {
+.navbar {
 	position: sticky;
 	top: 0;
 	background-color: #102533;
@@ -6,13 +6,13 @@ nav {
 	z-index: 1000;
 }
 
-nav ul { 
+.navbar ul { 
 	list-style: none;
 	display: flex;
 	justify-content: space-evenly;
 }
 
-nav li {
+.navbar li {
 	height: 50px;
 }
 
@@ -75,7 +75,7 @@ nav li {
 		display: none;
 	}
 
-	nav ul {
+	.navbar ul {
 		display: flex;
 		justify-content: flex-end;
 	}

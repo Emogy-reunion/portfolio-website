@@ -1,6 +1,6 @@
 import React from 'react';
 import './Cta.module.css';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const CallAction = () => {
 	return (

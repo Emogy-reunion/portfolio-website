@@ -1,12 +1,18 @@
 import React from 'react';
-import Logo from '/images/bytevision.png';
-import '/Header.module.css'
+import Image from 'next/image';
+import './Header.module.css'
 
 const Header = () => {
 	return (
-		<header>
+		<header className='logo-header'>
 			<div className='logo'>
-				<img src={Logo} alt='logo' />
+				<Image
+					src="/images/bytevision.png"
+					alt="bytevision logo"
+					height={530}
+					width={150}
+					layout='responsive'
+				/>
 			</div>
 		</header>
 	);

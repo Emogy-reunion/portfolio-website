@@ -6,7 +6,7 @@ import soonImage from '/images/soon.jpeg';
 const ProjectDetails = () => {
 
 	return (
-		<section>
+		<section className='project-section'>
 			<h1>Our projects</h1>
 			<div className='project-container'>
 				<a href='#'>
