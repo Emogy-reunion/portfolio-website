@@ -1,17 +1,5 @@
 iimport React from "react";
 import "./Services.module.css";
-import emImage from '/images/em.png';
-import devImage from '/images/dev.jpeg';
-import dev2Image from '/images/dev2.jpeg';
-import ui1Image from '/images/ui1.jpg';
-import ui2Image from '/images/ui2.jpg';
-import ui3Image from '/images/ui3.jpg';
-import maintain1Image from '/images/maintain1.jpeg';
-import techImage from '/images/tech.jpeg';
-import maintain2Image from '/images/maintain2.jpeg';
-import sample1Image from '/images/sample1.jpeg';
-import sample3Image from '/images/sample3.jpeg';
-import sample4Image from '/images/sample4.jpeg';
 import branding1Image from '/images/branding1.jpeg';
 import branding2Image from '/images/branding2.jpeg';
 import branding3Image from '/images/branding3.jpeg';
@@ -27,15 +15,15 @@ const ServiceDetails = () => {
 				<div className='services'>
 
 					<div>
-						<img src={emImage} alt='tech' />
+						<img src='/images/em.png' alt='website development' />
 					</div>
 
 					<div>
-                                        	<img src={devImage} alt='tech' />
+                                        	<img src='/images/dev.jpeg' alt='website development' />
                                 	</div>
 
 					<div className='hide-service'>
-                                        	<img src={dev2Image} alt='tech' />
+                                        	<img src='/images/dev2.jpeg' alt='website development' />
                                 	</div>
 
 				</div>
@@ -47,15 +35,15 @@ const ServiceDetails = () => {
 				<div className='services'>
 
 					<div className='hide-service'>
-						<img src={ui1Image} alt='tech' />
+						<img src='/images/ui1.jpg' alt='ui/ux design' />
 					</div>
 
 					<div>
-                                        	<img src={ui2Image} alt='tech' />
+                                        	<img src='/images/ui2.jpg' alt='ui/ux design' />
                                 	</div>
 
 					<div>
-                                        	<img src={ui3Image} alt='tech' />
+                                        	<img src='/images/ui3.jpg' alt='ui/ux design' />
                                 	</div>
 
 				</div>
@@ -67,15 +55,15 @@ const ServiceDetails = () => {
 				<div className='services'>
 
 					<div>
-						<img src={maintain1Image} alt='tech' />
+						<img src='/images/maintain1.jpeg' alt='website maintenance' />
 					</div>
 
 					<div className='hide-service'>
-                                        	<img src={techImage} alt='tech' />
+                                        	<img src='/images/tech.jpeg' alt='website maintenance' />
                                 	</div>
 
 					<div>
-                                        	<img src={maintain2Image} alt='tech' />
+                                        	<img src='/images/maintain2.jpeg' alt='website maintenance' />
                                 	</div>
 				</div>
 			</div>
@@ -86,15 +74,15 @@ const ServiceDetails = () => {
                                 <div className='services'>
 
                                         <div>
-                                                <img src={sample1Image} alt='tech' />
+                                                <img src='/images/sample1.jpeg' alt='graphic design' />
                                         </div>
 
                                         <div className='hide-service'>
-                                                <img src={sample3Image} alt='tech' />
+                                                <img src='/images/sample3.jpeg' alt='graphic design' />
                                         </div>
 
                                         <div>
-                                                <img src={sample4Image} alt='tech' />
+                                                <img src='/images/sample4.jpeg' alt='graphic design' />
                                         </div>
                                 </div>
                         </div>
@@ -106,15 +94,15 @@ const ServiceDetails = () => {
                                 <div className='services'>
 
                                         <div>
-                                                <img src={branding1Image} alt='tech' />
+                                                <img src='/images/branding1.jpeg' alt='branding' />
                                         </div>
 
                                         <div>
-                                                <img src={branding2Image} alt='tech' />
+                                                <img src='/images/branding2.jpeg' alt='branding' />
                                         </div>
 
                                         <div className='hide-service'>
-                                                <img src={branding3Image} alt='tech' />
+                                                <img src='/images/branding3.jpeg' alt='branding' />
                                         </div>
                                 </div>
                         </div>
