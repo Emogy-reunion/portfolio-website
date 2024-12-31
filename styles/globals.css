@@ -14,3 +14,29 @@ body{
 	width: 100%;
 	font-family: "Poppins", sans-serif;
 }
+
+nav {
+        position: sticky;
+        top: 0;
+        background-color: #102533;
+        width: 100%;
+        z-index: 1000;
+}
+
+nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+}
+
+nav li {
+        height: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+	nav ul {
+                display: flex;
+                justify-content: flex-end;
+        }
+}

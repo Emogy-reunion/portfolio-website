@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import Link from 'next/link'; // No need for <a> tag anymore
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from './Navbar.module.css';
+import './Navbar.module.css';
 
 const NavBar = () => {
     const [isHidden, setSidebar] = useState(true);
@@ -21,7 +22,7 @@ const NavBar = () => {
     };
 
     return (
-        <nav className={styles.navbar}>
+        <nav>
             <ul>
                 <li className={styles['hide-on-mobile']}>
                     <Link href='/' className={`${styles['nav-link']} ${isActive('/')}`}>Home</Link>
@@ -47,42 +48,40 @@ const NavBar = () => {
                 </li>
             </ul>
 
-
-
-	     <ul className={isHidden ? styles['hide-sidebar'] : styles.sidebar}>
-            <li>
-                <Link href="#" className="nav-link" onClick={HideSidebar}>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-                    </svg>
-                </Link>
-            </li>
-            <li>
-                <Link href="/" className={`${styles['nav-link']} ${isActive('/')}`}>
-                    Home
-                </Link>
-            </li>
-            <li>
-                <Link href="/about" className={`${styles['nav-link']} ${isActive('/about')}`}>
-                    About Us
-                </Link>
-            </li>
-            <li>
-                <Link href="/services" className={`${styles['nav-link']} ${isActive('/services')}`}>
-                    Services
-                </Link>
-            </li>
-            <li>
-                <Link href="/projects" className={`${styles['nav-link']} ${isActive('/projects')}`}>
-                    Projects
-                </Link>
-            </li>
-            <li>
-                <Link href="/gallery" className={`${styles['nav-link']} ${isActive('/gallery')}`}>
-                    Gallery
-                </Link>
-            </li>
-        </ul>
+	    <ul className={isHidden ? styles['hide-sidebar'] : styles.sidebar}>
+	    	<li>
+        		<Link href="#" className={styles['nav-link']} onClick={HideSidebar}>
+          		<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+	    			<path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          		</svg>
+        		</Link>
+      		</li>
+      		<li>
+        		<Link href="/" className={`${styles['nav-link']} ${isActive('/')}`}>
+          		Home
+        		</Link>
+      		</li>
+      		<li>
+        		<Link href="/about" className={`${styles['nav-link']} ${isActive('/about')}`}>
+          		About Us
+        		</Link>
+      		</li>
+      		<li>
+        		<Link href="/services" className={`${styles['nav-link']} ${isActive('/services')}`}>
+          		Services
+        		</Link>
+      		</li>
+      		<li>
+        		<Link href="/projects" className={`${styles['nav-link']} ${isActive('/projects')}`}>
+          		Projects
+        		</Link>
+      		</li>
+      		<li>
+        		<Link href="/gallery" className={`${styles['nav-link']} ${isActive('/gallery')}`}>
+          		Gallery
+        		</Link>
+      		</li>
+    	    </ul>
         </nav>
     );
 };
